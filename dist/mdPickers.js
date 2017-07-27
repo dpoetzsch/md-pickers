@@ -566,7 +566,9 @@ module.directive("mdpDatePicker", ["$mdpDatePicker", "$timeout", "$mdpLocale", f
 
                 // update input element value
                 function updateInputElement(value) {
+                    var start = inputElement[0].selectionStart;
                     inputElement[0].value = value;
+                    inputElement[0].setSelectionRange(start, start)
                     inputContainerCtrl.setHasValue(!ngModel.$isEmpty(value));
                 }
 
@@ -1088,7 +1090,9 @@ module.directive("mdpTimePicker", ["$mdpTimePicker", "$timeout", "$mdpLocale", f
 
             // update input element value
             function updateInputElement(value) {
+                var start = inputElement[0].selectionStart;
                 inputElement[0].value = value;
+                inputElement[0].setSelectionRange(start, start)
                 inputContainerCtrl.setHasValue(!ngModel.$isEmpty(value));
             }
 
