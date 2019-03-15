@@ -27,12 +27,19 @@
     "url": "https://github.com/dpoetzsch/md-pickers/issues"
   },
   "homepage": "https://github.com/dpoetzsch/md-pickers",
-  "dependencies": {
+  "peerDependencies": {
     "angular": "~1.5.0 || ~1.6.0",
+    "moment": "^2.24.0"
+  },
+  "dependencies": {
+    "angular": "^1.5.11",
     "angular-material": "^1.0.4",
-    "moment": "~2.19.0"
+    "moment": "^2.24.0"
   },
   "devDependencies": {
+    "angular-animate": "^1.5.11",
+    "angular-aria": "^1.5.11",
+    "angular-messages": "^1.5.11",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-concat": "^2.6.0",
